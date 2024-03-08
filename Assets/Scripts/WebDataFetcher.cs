@@ -33,9 +33,7 @@ public class WebDataFetcher : MonoBehaviour
 
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.LoadXml(xmlData);
-
         XmlNodeList nodeList = xmlDoc.GetElementsByTagName("item");
-
         foreach (XmlNode node in nodeList)
         {
             string data = node.InnerText;
